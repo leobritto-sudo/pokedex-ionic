@@ -10,3 +10,6 @@ sendo possível dentro do app, filtrar por tipo e nome do Pokémon, além de ver
 * Rxjs
 * HTML
 * Javascript
+
+## Autor do projeto
+Este projeto foi realizado e desenvolvido por Leonardo Alves.
