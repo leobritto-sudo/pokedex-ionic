@@ -1,0 +1,51 @@
+<app-poke-search></app-poke-search>
+
+<section class="listagem">
+  <ng-template>
+      <a class="pokemon">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="6">
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>Card Title</ion-card-title>
+                      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                    </ion-card-header>
+                  
+                    <ion-card-content>
+                      Here's a small text description for the card content. Nothing more, nothing less.
+                    </ion-card-content>
+                  </ion-card>
+                </ion-col>
+                <ion-col size="6">
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>Card Title</ion-card-title>
+                      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                    </ion-card-header>
+                  
+                    <ion-card-content>
+                      Here's a small text description for the card content. Nothing more, nothing less.
+                    </ion-card-content>
+                  </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+          <!-- <section class="pokemon__status">
+              <h2>
+                  {{ pokemon.name }}
+              </h2>
+
+              <ul>
+                  <li *ngFor="let value of pokemon.status.types" [ngClass]="value.type.name">
+                      {{ value.type.name | titlecase }}
+                  </li>
+              </ul>
+          </section>
+
+          <section class="pokemon__image">
+              <img [src]="pokemon.status.sprites.front_default" [alt]="pokemon.name">
+          </section> -->
+      </a>
+  </ng-template>
+</section>

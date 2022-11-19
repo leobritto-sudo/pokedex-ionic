@@ -1,0 +1,70 @@
+<app-poke-search></app-poke-search>
+
+<section class="listagem">
+  <ng-template [ngIf]="true">
+      <a class="pokemon">
+        <ion-grid>
+            <ion-row>
+
+                <ion-col size="6">
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-subtitle>Bulbasaur</ion-card-subtitle>
+                    </ion-card-header>
+                    <ion-card-content>
+                      <img src="assets/2.png" class="pokemon-pic" alt="">
+                      <ion-grid>
+                        <ion-row class="type">
+                          <ion-col size="6">
+                            <img src="assets/grass.png" alt="">
+                          </ion-col>
+                          <ion-col size="6">
+                            <img src="assets/grass.png" alt="">
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-card-content>
+                  </ion-card>
+                </ion-col>
+
+                <ion-col size="6">
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-subtitle>Bulbasaur</ion-card-subtitle>
+                    </ion-card-header>
+                    <ion-card-content>
+                      <img src="assets/2.png" class="pokemon-pic" alt="">
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="6" style="text-align: center;">
+                            <img src="assets/grass.png" alt="" style="width: 75%;">
+                          </ion-col>
+                          <ion-col size="6" style="text-align: center;">
+                            <img src="assets/grass.png" alt="" style="width: 75%">
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-card-content>
+                  </ion-card>
+                </ion-col>
+
+            </ion-row>
+        </ion-grid>
+          <!-- <section class="pokemon__status">
+              <h2>
+                  {{ pokemon.name }}
+              </h2>
+
+              <ul>
+                  <li *ngFor="let value of pokemon.status.types" [ngClass]="value.type.name">
+                      {{ value.type.name | titlecase }}
+                  </li>
+              </ul>
+          </section>
+
+          <section class="pokemon__image">
+              <img [src]="pokemon.status.sprites.front_default" [alt]="pokemon.name">
+          </section> -->
+      </a>
+  </ng-template>
+</section>

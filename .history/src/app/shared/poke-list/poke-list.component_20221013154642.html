@@ -1,0 +1,31 @@
+<app-poke-search></app-poke-search>
+
+<section class="listagem">
+  <ion-grid class="pokemon__status">
+    <ion-row>
+      <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
+        <a [routerLink]="['details', pokemon.status.id]" class="pokemon" *ngIf="pokemon.status">
+          <ion-col size="5">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-subtitle>
+                  {{ pokemon.name }}
+                </ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                <img [src]="pokemon.status.sprites.front_default" class="pokemon-pic" [alt]="pokemon.name">
+                <ion-grid>
+                  <ion-row class="type">
+                    <ion-col size="6" *ngFor="let value of pokemon.status.types" [ngClass]="value.type.name">
+                      <img [src]="'assets/icon-types/' + value.type.name + '.png'" alt="">
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </a>
+      </ng-template>
+    </ion-row>
+  </ion-grid>
+</section>

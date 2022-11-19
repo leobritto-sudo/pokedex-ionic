@@ -1,0 +1,17 @@
+ion-chip {
+    margin-inline-start: 12px;
+}
+
+ion-select {
+    --placeholder-color: #E8DAEF;
+    --placeholder-opacity: 1;
+
+    &::part(text) {
+        color: #E8DAEF;
+    }
+}
+
+ion-chip {
+    --background: #B7950B;
+    --color: #F9E79F;
+  }

@@ -1,0 +1,23 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+    main {
+        margin-top: rem-calc(40);
+
+        .pokemon__status {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: rem-calc(-90);
+                left: rem-calc(30);
+                max-width: rem-calc(130);
+                z-index: 10;
+
+                //Remove Bug Animation
+                -webkit-animation-fill-mode: none !important;
+                animation-fill-mode: none !important;
+            }
+        }
+    }
+}

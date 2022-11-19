@@ -1,0 +1,29 @@
+.listagem {
+
+    a {
+        text-decoration: none;
+    }
+
+    ion-card {
+        background-color: var(--purple);
+
+        ion-card-subtitle {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 25rem !important;
+        }
+    
+        .pokemon-pic {
+            width: 100%;
+            height: auto;
+        }
+    
+        .type {
+            text-align: center;
+    
+            img {
+                width: 75%;
+            }
+        }
+    }
+}

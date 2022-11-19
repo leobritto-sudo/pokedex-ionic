@@ -1,0 +1,11 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+    main {
+        margin-top: rem-calc(40);
+
+        .pokemon__status {
+            position: relative;
+        }
+    }
+}

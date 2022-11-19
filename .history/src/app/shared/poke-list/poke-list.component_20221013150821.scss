@@ -1,0 +1,18 @@
+.listagem {
+    ion-card-subtitle {
+        text-transform: uppercase;
+    }
+
+    .pokemon-pic {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .type {
+        text-align: center;
+
+        img {
+            width: 75%;
+        }
+    }
+}
